@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Giftify – Download</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      cursor: url('cursor.cur'), auto;
+    }
+
+    body {
+      background: url('bg.gif') no-repeat center center fixed;
+      background-size: cover;
+      color: #fff;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      text-align: center;
+      overflow: hidden;
+    }
+
+    h1 {
+      font-size: 3rem;
+      background: linear-gradient(90deg, #ff00ff, #00ffff, #ffcc00);
+      background-size: 300% 300%;
+      animation: rainbow 3s linear infinite;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 1.2rem;
+      margin-bottom: 25px;
+    }
+
+    .btn {
+      padding: 15px 30px;
+      font-size: 18px;
+      color: black;
+      background-color: #00ffff;
+      border: none;
+      border-radius: 12px;
+      font-weight: bold;
+      box-shadow: 0 0 20px #00ffff;
+      transition: all 0.2s ease-in-out;
+      cursor: pointer;
+    }
+
+    .btn:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 30px #00ffff;
+    }
+
+    @keyframes rainbow {
+      0% { background-position: 0% 50%; }
+      100% { background-position: 100% 50%; }
+    }
+
+    audio {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <h1>🎁 Giftify</h1>
+  <p>Get the latest version of Giftify below:</p>
+  <button class="btn" onclick="window.open('https://drive.google.com/file/d/1UMdynbyYbQhDznLxOdZG3mi-0Lf1GBrW/view?usp=sharing', '_blank')">⬇️ Download Giftify</button>
+
+  <audio autoplay loop>
+    <source src="music.mp3" type="audio/mpeg">
+  </audio>
+</body>
+</html>

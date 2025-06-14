@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  cursor: url('cursor.cur'), auto;
+}
+body {
+  font-family: 'Orbitron', sans-serif;
+  background: url('bg.gif') center/cover fixed no-repeat;
+  color: #eee;
+  text-align: center;
+  min-height: 100vh;
+  position: relative;
+}
+.bg {
+  position: fixed;
+  inset: 0;
+  backdrop-filter: blur(10px);
+  z-index: -1;
+}
+.avatar {
+  width: 120px;
+  border-radius: 50%;
+  margin-top: 2rem;
+  border: 2px solid #0ff;
+  box-shadow: 0 0 20px #0ff;
+}
+h1 {
+  font-size: 3rem;
+  margin-top: 1rem;
+  text-shadow: 0 0 10px #0ff;
+}
+.sub {
+  font-size: 1.2rem;
+  color: #ccc;
+  margin-bottom: 1rem;
+}
+#typing {
+  font-size: 1rem;
+  color: #0ff;
+  margin: 1rem auto;
+  height: 1.5rem;
+}
+.projects {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  margin: 2rem auto;
+  max-width: 600px;
+}
+.card {
+  background: rgba(0, 255, 255, 0.08);
+  border: 1px solid #0ff4;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 0 20px #0ff5;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+.card:hover {
+  transform: scale(1.05);
+}
+.features {
+  list-style: none;
+  margin: 1rem auto;
+  padding: 0;
+}
+.features li {
+  margin: 0.5rem 0;
+  color: #0ff;
+}
+.btn {
+  margin-top: 1rem;
+  padding: 0.8rem 1.5rem;
+  background: #0ff;
+  color: #000;
+  border: none;
+  font-weight: bold;
+  border-radius: 10px;
+  text-decoration: none;
+  box-shadow: 0 0 15px #0ff;
+  transition: 0.2s;
+  display: inline-block;
+}
+.btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 25px #0ff;
+}
+footer {
+  margin: 2rem 0;
+  font-size: 0.9rem;
+}
+footer a {
+  color: #0ff;
+  margin: 0 0.5rem;
+  text-decoration: none;
+}
